@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartEdu - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <i class="fa-solid fa-book-open" style="font-size: 24px;"></i>
+        <div class="brand-text">
+          <h3>SmartEdu</h3>
+          <p>Digital Learning Platform<br>for Rural School Students</p>
+        </div>
+      </div>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#" class="nav-link active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-book"></i> My Courses</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-video"></i> Live Classes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-clipboard-list"></i> Assignments</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-check-square"></i> Quizzes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> Library</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-note-sticky"></i> Notes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-circle-question"></i> Doubt Center</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-robot"></i> AI Agent</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-chart-line"></i> Progress</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-certificate"></i> Certificates</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bell"></i> Announcements</a></li>
+        <li class="nav-item" style="margin-top:20px;"><a href="#" class="nav-link"><i class="fa-regular fa-circle-question"></i> Help</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-gear"></i> Settings</a></li>
+      </ul>
+
+      <div class="sidebar-illustration">
+        <div style="background: var(--primary-light); height: 100px; border-radius: 8px; display: flex; align-items:center; justify-content:center; padding:10px;">
+          <p style="color: #fff; font-size: 12px; line-height: 1.4; margin:0; text-align: left;">Better Education<br>Brighter Future <i class="fa-solid fa-heart"></i></p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search courses, topics, or anything...">
+          <span class="search-shortcut">Ctrl + K</span>
+        </div>
+
+        <div class="topbar-right">
+          <div class="notification">
+            <i class="fa-regular fa-bell"></i>
+            <span class="badge">3</span>
+          </div>
+          <div class="profile-widget">
+            <div class="profile-info">
+              <h4>Shahina Shaik</h4>
+              <p>Class 10 • Govt. High School</p>
+            </div>
+            <img src="https://i.pravatar.cc/150?img=47" alt="Profile" class="profile-pic">
+          </div>
+          <!-- Added logout for functionality demonstration -->
+          <a href="#" id="logoutBtn" style="color: var(--text-light); text-decoration: none; font-size: 20px;"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+      </header>
+
+      <!-- Dashboard Body -->
+      <div class="dashboard-content">
+        
+        <!-- Welcome Banner -->
+        <div class="welcome-banner">
+          <div class="welcome-text">
+            <h4>Welcome Back</h4>
+            <h1>Hello, Shahina! <span style="font-size:28px;">👋</span></h1>
+            <p>Your hard work today builds a brighter tomorrow.<br>Keep learning, keep growing!</p>
+            <div class="welcome-meta">
+              <span><i class="fa-solid fa-building-columns"></i> Govt. High School</span>
+              <span><i class="fa-solid fa-users"></i> Class 10</span>
+              <span><i class="fa-solid fa-book-open"></i> English</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <!-- Stat 1 -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="icon-box icon-green"><i class="fa-solid fa-book-open-reader"></i></div>
+              <div class="stat-title">Courses Enrolled</div>
+            </div>
+            <div class="stat-value">5 / 9</div>
+            <div class="progress-bar-container"><div class="progress-bar pb-green" style="width: 56%"></div></div>
+            <div class="stat-footer text-green">56% completed</div>
+          </div>
+          <!-- Stat 2 -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="icon-box icon-blue"><i class="fa-solid fa-video"></i></div>
+              <div class="stat-title">Lessons Completed</div>
+            </div>
+            <div class="stat-value">48 / 72</div>
+            <div class="progress-bar-container"><div class="progress-bar pb-blue" style="width: 67%"></div></div>
+            <div class="stat-footer text-blue">67% completed</div>
+          </div>
+          <!-- Stat 3 -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="icon-box icon-purple"><i class="fa-solid fa-trophy"></i></div>
+              <div class="stat-title">Quiz Average</div>
+            </div>
+            <div class="stat-value">88%</div>
+            <div class="progress-bar-container"><div class="progress-bar pb-purple" style="width: 88%"></div></div>
+            <div class="stat-footer text-purple">Good job!</div>
+          </div>
+          <!-- Stat 4 -->
+          <div class="stat-card">
+            <div class="stat-header">
+              <div class="icon-box icon-pink"><i class="fa-solid fa-certificate"></i></div>
+              <div class="stat-title">Certificates</div>
+            </div>
+            <div class="stat-value">3</div>
+            <div class="progress-bar-container"><div class="progress-bar pb-pink" style="width: 30%"></div></div>
+            <div class="stat-footer text-pink">Earn more!</div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          
+          <!-- Main Left Column -->
+          <div>
+            
+            <!-- Learning Rhythm -->
+            <div class="section-card">
+              <div class="section-header">
+                <div class="section-title"><i class="fa-regular fa-calendar-check"></i> Your Learning Rhythm</div>
+                <a href="#" class="view-all">View Calendar <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <p style="font-size: 12px; color: var(--text-light); margin-bottom: 12px;">October 2026</p>
+              <div class="calendar-row">
+                <div class="cal-day"><span>Mon</span><strong>5</strong></div>
+                <div class="cal-day"><span>Tue</span><strong>6</strong></div>
+                <div class="cal-day"><span>Wed</span><strong>7</strong></div>
+                <div class="cal-day"><span>Thu</span><strong>8</strong></div>
+                <div class="cal-day"><span>Fri</span><strong>9</strong></div>
+                <div class="cal-day active"><span>Sat</span><strong>10</strong></div>
+                <div class="cal-day"><span>Sun</span><strong>11</strong></div>
+              </div>
+              <div class="tasks-header">
+                <div>
+                  <h5><i class="fa-solid fa-sun" style="color:#ffb300;"></i> Today's Plan</h5>
+                  <p id="taskCountText">3/5 tasks completed</p>
+                </div>
+                <button class="btn-add-task" id="addTaskBtn"><i class="fa-solid fa-plus"></i> Add Task</button>
+              </div>
+              
+              <!-- Added input form to make fields "working" as requested -->
+              <div id="addTaskForm" class="hidden" style="margin-bottom: 15px; display: flex; gap:10px;">
+                <input type="text" id="newTaskInput" placeholder="Enter task name..." style="flex:1; padding: 8px; border: 1px solid var(--border-color); border-radius:4px; font-size:13px;">
+                <button id="saveTaskBtn" style="background:var(--primary-light); color:#fff; border:none; padding:8px 12px; border-radius:4px; cursor:pointer;">Add</button>
+              </div>
+
+              <ul class="task-list" id="taskList">
+                <li class="task-item completed">
+                  <div class="task-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span><strong>Watch:</strong> Linear Equations (Mathematics)</span>
+                </li>
+                <li class="task-item completed">
+                  <div class="task-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span><strong>Complete:</strong> Science Quiz</span>
+                </li>
+                <li class="task-item completed">
+                  <div class="task-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span><strong>Read:</strong> Photosynthesis (Science)</span>
+                </li>
+                <li class="task-item">
+                  <div class="task-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span>Join Live Class - English (4:00 PM)</span>
+                </li>
+                <li class="task-item">
+                  <div class="task-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span>Submit Assignment - Social Studies</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- My Courses -->
+            <div class="section-card">
+              <div class="section-header">
+                <div class="section-title"><i class="fa-solid fa-book-open"></i> My Courses</div>
+                <a href="#" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="courses-grid">
+                
+                <div class="course-card">
+                  <div class="course-img">
+                    <!-- Placeholder color instead of image for simplicity, icon positioned -->
+                    <div style="background:#2e4438; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#fff; font-size: 20px; font-family: monospace;">2x + 3 = 7<br>x = 2</div>
+                    <div class="course-icon m">M</div>
+                  </div>
+                  <div class="course-body">
+                    <div class="course-title">Mathematics</div>
+                    <div class="course-meta">15 / 20 lessons</div>
+                    <div class="course-progress">
+                      <div class="progress-bar-container" style="width: 70%;"><div class="progress-bar pb-green" style="width: 75%"></div></div>
+                      <span>75%</span>
+                    </div>
+                    <button class="btn-continue">Continue</button>
+                  </div>
+                </div>
+
+                <div class="course-card">
+                  <div class="course-img">
+                    <div style="background:#3b5998; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#fff; font-size: 24px;"><i class="fa-solid fa-flask"></i></div>
+                    <div class="course-icon s">S</div>
+                  </div>
+                  <div class="course-body">
+                    <div class="course-title">Science</div>
+                    <div class="course-meta">12 / 20 lessons</div>
+                    <div class="course-progress">
+                      <div class="progress-bar-container" style="width: 70%;"><div class="progress-bar pb-blue" style="width: 60%"></div></div>
+                      <span>60%</span>
+                    </div>
+                    <button class="btn-continue">Continue</button>
+                  </div>
+                </div>
+
+                <div class="course-card">
+                  <div class="course-img">
+                    <div style="background:#8d6e63; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#fff; font-size: 24px;"><i class="fa-solid fa-book"></i></div>
+                    <div class="course-icon e">E</div>
+                  </div>
+                  <div class="course-body">
+                    <div class="course-title">English</div>
+                    <div class="course-meta">16 / 20 lessons</div>
+                    <div class="course-progress">
+                      <div class="progress-bar-container" style="width: 70%;"><div class="progress-bar pb-pink" style="width: 80%"></div></div>
+                      <span>80%</span>
+                    </div>
+                    <button class="btn-continue">Continue</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column -->
+          <div>
+            
+            <!-- Quick Actions -->
+            <div class="section-card" style="padding: 16px;">
+              <div class="section-title" style="margin-bottom:16px; font-size:16px;"><i class="fa-solid fa-bolt"></i> Quick Actions</div>
+              <div class="quick-actions-grid">
+                <button class="action-btn btn-blue"><i class="fa-solid fa-play"></i> Join Live Class</button>
+                <button class="action-btn btn-green"><i class="fa-solid fa-file-lines"></i> View Assignments</button>
+                <button class="action-btn btn-purple"><i class="fa-solid fa-circle-question"></i> Ask Doubt</button>
+                <button class="action-btn btn-pink"><i class="fa-solid fa-robot"></i> Open AI Agent</button>
+              </div>
+            </div>
+
+            <!-- Learning Goals -->
+            <div class="section-card">
+              <div class="section-header">
+                <div class="section-title"><i class="fa-solid fa-bullseye"></i> Learning Goals</div>
+                <a href="#" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              
+              <div class="goal-chart">
+                <div class="chart-circle">
+                  <div class="chart-inner">
+                    <h2 id="goalCount">2/5</h2>
+                    <p>Daily Goal</p>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="goal-list" id="goalList">
+                <li class="goal-item done">
+                  <div class="goal-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span>Complete 5 lessons</span>
+                </li>
+                <li class="goal-item">
+                  <div class="goal-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span>Score 70%+ in quiz</span>
+                </li>
+                <li class="goal-item">
+                  <div class="goal-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span>Join 1 live class</span>
+                </li>
+                <li class="goal-item">
+                  <div class="goal-checkbox"><i class="fa-solid fa-check"></i></div>
+                  <span>Study for 2 hours</span>
+                </li>
+              </ul>
+              
+              <div class="goal-msg">
+                <i class="fa-solid fa-trophy"></i> You're doing great! Keep going!
+              </div>
+            </div>
+
+            <!-- Upcoming Live Classes -->
+            <div class="section-card">
+              <div class="section-header">
+                <div class="section-title"><i class="fa-solid fa-video"></i> Upcoming Live Classes</div>
+                <a href="#" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              
+              <div class="upcoming-list">
+                <div class="upcoming-item">
+                  <div class="flex items-center">
+                    <div class="up-icon" style="background:#7b1fa2;"><i class="fa-solid fa-video"></i></div>
+                    <div class="up-info">
+                      <h5>Mathematics <span style="font-weight:400;">- Linear Eq...</span></h5>
+                      <p><i class="fa-regular fa-calendar"></i> Today • 10:00 AM</p>
+                    </div>
+                  </div>
+                  <button class="btn-up join">Join</button>
+                </div>
+                
+                <div class="upcoming-item">
+                  <div class="flex items-center">
+                    <div class="up-icon" style="background:#2e7d32;"><i class="fa-solid fa-vial"></i></div>
+                    <div class="up-info">
+                      <h5>Science <span style="font-weight:400;">- Life Processes</span></h5>
+                      <p><i class="fa-regular fa-calendar"></i> Tomorrow • 11:00 AM</p>
+                    </div>
+                  </div>
+                  <button class="btn-up remind">Reminder</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer-quote">
+          <p><i class="fa-solid fa-leaf" style="color:var(--primary-light);"></i> "Education is the key to unlock the golden door of freedom."</p>
+          <span class="author">— George Washington Carver</span>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

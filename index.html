@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartEdu - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="flex justify-center items-center" style="gap: 10px; margin-bottom: 20px;">
+        <i class="fa-solid fa-book-open-reader" style="font-size: 32px; color: var(--primary-dark);"></i>
+        <h2 style="margin:0;">SmartEdu</h2>
+      </div>
+      <p style="color: var(--text-light); margin-bottom: 24px; font-size: 14px;">Welcome back! Please login to your account.</p>
+      
+      <form id="loginForm">
+        <div id="errorMsg" class="error-msg">Invalid email or password. Try admin@test.com / admin</div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
